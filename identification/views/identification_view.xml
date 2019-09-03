@@ -1,0 +1,38 @@
+<odoo>
+    <record id="identification_view_list" model="ir.ui.view">
+        <field name="name">Identification</field>
+        <field name="model">identification</field>
+        <field name="arch" type="xml">
+            <tree string="Identification">
+                <field name="employee_name"/>
+                <field name="identity_type"/>
+                <field name="id_number"/>
+            </tree>
+        </field>
+    </record>
+    <record id="identification_form" model="ir.ui.view">
+        <field name="name">Identification</field>
+        <field name="model">identification</field>
+        <field name="arch" type="xml">
+            <form string="Identification">
+                <sheet>
+                    <group>
+                        <field name="employee_name"/>
+                        <field name="identity_type"/>
+                        <field name="id_number"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="identification" model="ir.actions.act_window">
+        <field name="name">Identification</field>
+        <field name="res_model">identification</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem
+            name="Identification"
+            id="identification_menu"
+            sequence="5"
+            action="identification"/>
+</odoo>

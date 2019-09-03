@@ -10,6 +10,7 @@
     'data':[
         'security/ir.model.access.csv',
         'views/certification_standard.xml',
+        'views/certification_bodies.xml',
         'views/certification_view.xml',
         'views/res_partner.xml'],
     'development_status':'Beta',
