@@ -10,9 +10,9 @@
     'data':[
         'security/ir.model.access.csv',
         'security/certification_security.xml',
+        'views/certification_view.xml',
         'views/certification_standard.xml',
         'views/certification_bodies.xml',
-        'views/certification_view.xml',
         'views/res_partner.xml'],
     # 'demo': ['demo/certification_demo.xml'],
     'development_status':'Beta',
