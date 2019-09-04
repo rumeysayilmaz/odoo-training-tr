@@ -8,6 +8,7 @@
     'license':'AGPL-3',
     'depends':['base'],
     'data':['security/ir.model.access.csv',
-        'views/identification_view.xml'],
+            'security/identification_security.xml',
+            'views/identification_view.xml'],
     'development_status':'Beta',
 }

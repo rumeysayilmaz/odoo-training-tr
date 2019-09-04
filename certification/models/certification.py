@@ -23,12 +23,13 @@ class Certification(models.Model):
 
     @api.depends('date')
     def _compute_expiry_days(self):
-        if self.date:
-            self.expiry_days = (self.date - fields.Date.today()).days
-            if self.expiry_days > 0:
-                self.expiry_status = 'available'
+        for rec in self:
+            if rec.date:
+                rec.expiry_days = (rec.date - fields.Date.today()).days
+            if rec.expiry_days > 0:
+                rec.expiry_status = 'available'
             else:
-                self.expiry_status = 'expired'
+                rec.expiry_status = 'expired'
 
     @api.multi
     def update_date_one_month(self):
