@@ -14,8 +14,10 @@
         'views/certification_standard.xml',
         'views/certification_bodies.xml',
         'views/res_partner.xml',
-        'reports/certification_report.xml'],
+        'reports/certification_report.xml',
+        'reports/report_certification_pdf.xml',
+        ],
     # 'demo': ['demo/certification_demo.xml'],
     'development_status':'Beta',
-    'maintainers': ['eficient'],
+    'maintainers': ['rumeysa yilmaz'],
 }
