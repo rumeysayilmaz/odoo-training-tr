@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_iot_tracking_device_user,iot_tracking_device.user,model_tracking_device,base.group_user,1,1,1,1
+access_iot_tracking_deviceobject_user,iot_tracking_deviceobject.user,model_tracking_deviceobject,base.group_user,1,1,1,1
+access_iot_tracking_location_user,iot_tracking_location.user,model_tracking_location,base.group_user,1,1,1,1
+access_iot_tracking_authorization_user,iot_tracking_authorization.user,model_tracking_authorization,base.group_user,1,1,1,1

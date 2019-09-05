@@ -1,0 +1,43 @@
+<odoo>
+    <record id="view_iot_tracking_device_object_form" model="ir.ui.view">
+        <field name="name">tracking.deviceobject.form</field>
+        <field name="model">tracking.deviceobject</field>
+        <field name="arch" type="xml">
+            <form string="Device Objects">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="iot_code"/>
+                            <field name="partner_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tracking_device_object_tree" model="ir.ui.view">
+        <field name="name">tracking.deviceobject.tree</field>
+        <field name="model">tracking.deviceobject</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="iot_code"/>
+                <field name="partner_id"/>
+            </tree>
+        </field>
+    </record>
+
+        <record id="tracking_action_deviceobject"
+            model="ir.actions.act_window">    <!-- Defining action for Device Objects tab-->
+        <field name="name">Device Objects</field>
+        <field name="res_model">tracking.deviceobject</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem id="menu_iot_tracking_deviceobject" name="Device Objects" parent="menu_iot_tracking_root" sequence="10"
+              action="tracking_action_deviceobject"/>
+
+</odoo>

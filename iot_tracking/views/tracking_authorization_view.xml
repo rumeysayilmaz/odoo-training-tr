@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Views-->
+    <record id="view_iot_tracking_authorization_form" model="ir.ui.view">
+        <field name="name">tracking.authorization.form</field>
+        <field name="model">tracking.authorization</field>
+        <field name="arch" type="xml">
+            <form string="Authorizations">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="object_id"/>
+                            <field name="location_id"/>
+                            <field name="expire_date"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_iot_tracking_authorization_tree" model="ir.ui.view">
+        <field name="name">tracking.authorization.tree</field>
+        <field name="model">tracking.authorization</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="object_id"/>
+                <field name="location_id"/>
+                <field name="expire_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="iot_tracking_action_authorization"
+            model="ir.actions.act_window">    <!-- Defining action for Authorizations tab-->
+        <field name="name">Authorizations</field>
+        <field name="res_model">tracking.authorization</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu-->
+
+    <menuitem id="menu_iot_tracking_authorization" name="Authorizations" parent="menu_iot_tracking_root" sequence="40"
+              action="iot_tracking_action_authorization"/>
+
+</odoo>

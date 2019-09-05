@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_tracking_form" model="ir.ui.view">
+        <field name="name">tracking.device.form</field>
+        <field name="model">tracking.device</field>
+        <field name="arch" type="xml">
+            <form string="Devices">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="device_type"/>
+                            <field name="ip_address"/>
+                            <field name="fixed_asset_no"/>
+                            <field name="direction_type"/>
+                            <field name="location_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tracking_tree" model="ir.ui.view">
+        <field name="name">tracking.device.tree</field>
+        <field name="model">tracking.device</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="device_type"/>
+                <field name="ip_address"/>
+                <field name="fixed_asset_no"/>
+                <field name="direction_type"/>
+                <field name="location_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--    Actions-->
+    <record id="tracking_action_device" model="ir.actions.act_window">    <!-- Defining action for Devices tab -->
+        <field name="name">Devices</field>
+        <field name="res_model">tracking.device</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menus-->
+    <menuitem id="menu_iot_tracking_root" name="iot Device Tracking" sequence="1"/>
+
+    <menuitem id="menu_tracking_device" name="Devices" parent="menu_iot_tracking_root" sequence="10"
+              action="tracking_action_device"/>   <!-- Devices menu item -->
+
+</odoo>
