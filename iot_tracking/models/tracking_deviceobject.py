@@ -5,7 +5,7 @@ from odoo.modules.module import get_module_resource
 class DeviceObject(models.Model):
     _name = 'tracking.deviceobject'
     _description = 'Tracking Device Objects'
-
+    _rec_name = 'iot_code'
     name = fields.Char(string="Device Object Name")
     iot_code = fields.Char(string="IOT Code")
     _sql_constraints = [

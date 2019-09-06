@@ -11,7 +11,6 @@
                             <field name="device_type"/>
                             <field name="ip_address"/>
                             <field name="fixed_asset_no"/>
-                            <field name="direction_type"/>
                             <field name="location_id"/>
                         </group>
                     </group>
@@ -28,7 +27,6 @@
                 <field name="device_type"/>
                 <field name="ip_address"/>
                 <field name="fixed_asset_no"/>
-                <field name="direction_type"/>
                 <field name="location_id"/>
             </tree>
         </field>

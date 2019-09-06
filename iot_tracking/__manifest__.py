@@ -12,7 +12,8 @@
         'views/tracking_location_view.xml',
         'views/tracking_deviceobject_view.xml',
         'views/tracking_device_view.xml',
-        'views/tracking_authorization_view.xml'],
+        'views/tracking_authorization_view.xml',
+        'views/tracking_movement.xml'],
     'development_status':'Beta',
     'maintainers': ['rumeysa yilmaz abdulkadir yilmaz'],
 }

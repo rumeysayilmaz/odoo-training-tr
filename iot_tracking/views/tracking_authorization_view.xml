@@ -9,6 +9,7 @@
                 <sheet>
                     <group>
                         <group>
+                            <field name="partner_id"/>
                             <field name="object_id"/>
                             <field name="location_id"/>
                             <field name="expire_date"/>

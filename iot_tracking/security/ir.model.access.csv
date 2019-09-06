@@ -3,3 +3,4 @@ access_iot_tracking_device_user,iot_tracking_device.user,model_tracking_device,b
 access_iot_tracking_deviceobject_user,iot_tracking_deviceobject.user,model_tracking_deviceobject,base.group_user,1,1,1,1
 access_iot_tracking_location_user,iot_tracking_location.user,model_tracking_location,base.group_user,1,1,1,1
 access_iot_tracking_authorization_user,iot_tracking_authorization.user,model_tracking_authorization,base.group_user,1,1,1,1
+access_iot_tracking_movement_user,iot_tracking_movement.user,model_tracking_movement,base.group_user,1,1,1,1

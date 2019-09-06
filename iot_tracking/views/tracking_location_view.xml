@@ -38,6 +38,6 @@
 
     <!-- Menu definition-->
 
-    <menuitem id="menu_iot_tracking_location" name="iot Device Locations" parent="menu_iot_tracking_root" sequence="20"
+    <menuitem id="menu_iot_tracking_location" name="iot Device Locations" parent="menu_iot_tracking_root" sequence="30"
               action="iot_tracking_action_location"/>
 </odoo>

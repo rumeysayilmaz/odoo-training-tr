@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_tracking_movement_form" model="ir.ui.view">
+        <field name="name">tracking.movement.form</field>
+        <field name="model">tracking.movement</field>
+        <field name="arch" type="xml">
+            <form string="Movements">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="trackDateTime"/>
+                            <field name="device_id"/>
+                            <field name="object_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tracking_movement_tree" model="ir.ui.view">
+        <field name="name">tracking.movement.tree</field>
+        <field name="model">tracking.movement</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="trackDateTime"/>
+                <field name="device_id"/>
+                <field name="object_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--    Actions-->
+
+    <record id="tracking_action_movement" model="ir.actions.act_window">    <!-- Defining action for Movements tab-->
+        <field name="name">Movements</field>
+        <field name="res_model">tracking.movement</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- Menus-->
+
+    <menuitem id="menu_iot_tracking_movement" name="Movements" parent="menu_iot_tracking_root" sequence="50"
+              action="tracking_action_movement"/>
+
+
+</odoo>

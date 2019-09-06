@@ -37,7 +37,7 @@
     </record>
 
 
-    <menuitem id="menu_iot_tracking_deviceobject" name="Device Objects" parent="menu_iot_tracking_root" sequence="10"
+    <menuitem id="menu_iot_tracking_deviceobject" name="Device Objects" parent="menu_iot_tracking_root" sequence="20"
               action="tracking_action_deviceobject"/>
 
 </odoo>
